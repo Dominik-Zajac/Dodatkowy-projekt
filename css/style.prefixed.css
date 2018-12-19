@@ -426,8 +426,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #our-team-section .row-team {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 #our-team-section .title-section {
@@ -447,10 +451,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #our-team-section .column-team {
-  width: 350px;
+  width: 300px;
   height: 432px;
-  text-align: center;
-  margin: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 15px;
   padding: 20px;
   background-color: #FFF;
 }
@@ -461,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #242424;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
 #our-team-section h5 {
@@ -593,7 +605,7 @@ h1, h2, h3, h4, h5, h6 {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding: 50px 0;
+  padding: 30px 0;
   background-color: #F7F7F7;
 }
 
@@ -617,7 +629,7 @@ h1, h2, h3, h4, h5, h6 {
 #price-section .column-price {
   width: 255px;
   height: 343px;
-  margin: 30px;
+  margin: 20px 10px;
   padding: 25px;
   display: -ms-flexbox;
   display: flex;
@@ -802,7 +814,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #some-facts-section .facts-content {
-  max-width: 287px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 200px;
+  margin: 0 10px;
+}
+
+#some-facts-section .line-facts {
+  font-size: 17px;
+  font-weight: 700;
 }
 
 #some-facts-section h4 {
@@ -817,6 +843,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 #some-facts-section p {
@@ -824,6 +852,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 300;
   color: #7e7e7e;
+  margin: 0 -5px;
 }
 
 /*     Share     */
@@ -1508,6 +1537,7 @@ h1, h2, h3, h4, h5, h6 {
   /*     Facts     */
   #some-facts-section .facts-content {
     border-top: 1px solid #b88b58;
+    margin: 10px 0;
   }
   /*     Share     */
   #share-section {
